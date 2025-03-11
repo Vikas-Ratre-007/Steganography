@@ -73,7 +73,7 @@ Decoded message: This is a secret message!
 - Extract the first 16 bits to determine the length of the hidden message.
 - Extract the corresponding number of bits from the image.
 - Convert the binary string back into the original text message.
-- 
+  
 **Limitations**
   
 - The text message's size must be small enough to fit within the image. If the image doesn't have enough pixels to hide the message, you will encounter errors or truncation.
