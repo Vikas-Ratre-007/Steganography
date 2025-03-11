@@ -21,19 +21,20 @@ pip install Pillow
 The encode_image function takes an input image file and a text string and generates a new image with the hidden message. The length of the message is encoded into the image to help with decoding later.
 
 Inputs:
-image_path: Path to the input image where you want to hide the text.
-text: The text message you want to hide.
-output_image_path: Path where the modified image with the hidden message will be saved.
+- image_path: Path to the input image where you want to hide the text.
+- text: The text message you want to hide.
+- output_image_path: Path where the modified image with the hidden message will be saved.
 Run the script:
 
-bash
-Copy
+```bash
 python steganography.py
+```bash
 You will be prompted to enter:
 
 Image path (e.g., input_image.png).
 The text to hide (e.g., "This is a secret message!").
 Output image path (e.g., output_image.png).
+
 2. Decoding the Hidden Message
 The decode_image function extracts the hidden message from the modified image. It first reads the encoded length of the message and then decodes the actual hidden message.
 
